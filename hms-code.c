@@ -8,7 +8,7 @@ struct record
     char disease[30];
     char address[50];
     char gender;
-    int cabin, phone, age;
+    int room, phone, age;
 } x[100];
 
 struct staffinfo
@@ -140,8 +140,8 @@ void add()
         printf("Enter patient's Address : ");
         gets(x[i].address);
         fflush(stdin);
-        printf("Enter cabin no : ");
-        scanf("%d", &x[i].cabin);
+        printf("Enter Room No. : ");
+        scanf("%d", &x[i].room);
         fflush(stdin);
         printf("Enter phone number : ");
         scanf("%d", &x[i].phone);
@@ -163,10 +163,10 @@ void view()
         puts(x[i].name);
         printf("Disease : ");
         puts(x[i].disease);
-        printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[i].cabin, x[i].phone, x[i].age, x[i].gender);
+        printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[i].room, x[i].phone, x[i].age, x[i].gender);
         printf("Patient Address : ");
         puts(x[i].address);
-        printf("\n\n");
+        printf("--------------------------------------------\n");
     }
 }
 void edit()
@@ -175,7 +175,7 @@ void edit()
     fflush(stdin);
     printf("What do you want to edit ?\n");
     printf("Enter your option\n");
-    printf("1.Name\n2.Disease\n3.Age\n4.Cabin\n5.Phone no.\n6.Gender\n7.Address\n");
+    printf("1. Name\n2. Disease\n3. Age\n4. Room No.\n5. Phone no.\n6. Gender\n7. Address\n");
     printf("Option=");
     scanf("%d", &q); //option
     if (q <= 7)
@@ -206,8 +206,8 @@ void edit()
             else if (q == 4)
             {
                 fflush(stdin);
-                printf("Enter the new Cabin no : ");
-                scanf("%d", &x[p].cabin);
+                printf("Enter the new Room no : ");
+                scanf("%d", &x[p].room);
             }
 
             else if (q == 5)
@@ -244,7 +244,7 @@ void search()
     int s, h, f;
     char u[100];
     printf("By what do you want to search ?\n");
-    printf("1.Serial no.\n2.Name\n3.Disease\n4.Cabin no.\n5.Phone no.\n6.Age\n7.Gender\n8.Address\n\nOption : ");
+    printf("1. Serial no.\n2. Name\n3. Disease\n4. Room no.\n5. Phone no.\n6. Age\n7. Gender\n8. Address\n\nOption : ");
     scanf("%d", &h);
     if (h == 1)
     {
@@ -258,7 +258,7 @@ void search()
             puts(x[s].name);
             printf("Disease : ");
             puts(x[s].disease);
-            printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[s].cabin, x[s].phone, x[s].age, x[s].gender);
+            printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[s].room, x[s].phone, x[s].age, x[s].gender);
             printf("Address : ");
             puts(x[s].address);
             printf("\n\n");
@@ -283,7 +283,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -310,7 +310,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -323,11 +323,11 @@ void search()
     else if (h == 4)
     {
         int f = 1;
-        printf("Enter Cabin number : ");
+        printf("Enter Room number : ");
         scanf("%d", &f);
         for (g = 0; g < num; g++)
         {
-            if (f == x[g].cabin)
+            if (f == x[g].room)
             {
                 printf("\n");
                 printf("Serial Number : %d\n", g);
@@ -335,7 +335,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -360,7 +360,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -385,7 +385,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -411,7 +411,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -438,7 +438,7 @@ void search()
                 puts(x[g].name);
                 printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no : %d\nPhone number : 0%d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Room no : %d\nPhone number : 0%d\nAge : %d\nGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
                 printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
@@ -459,7 +459,7 @@ void del()
     if (f < num)
     {
         printf("What do you want ?\n");
-        printf("1.Remove the whole record\n2.Remove Name\n3.Remove Disease\n4.Remove age\n5.Remove Cabin\n6.Remove phone number\n7.Remove Gender\n8.Remove Address\nOption : ");
+        printf("1. Remove the whole record\n2. Remove Name\n3. Remove Disease\n4. Remove age\n5. Remove Room No.\n6. Remove phone number\n7. Remove Gender\n8. Remove Address\nOption : ");
         scanf("%d", &h);
         if (h == 1)
         {
@@ -470,7 +470,7 @@ void del()
                 strcpy(x[f].address, x[f + 1].address);
                 x[f].age = x[f + 1].age;
                 x[f].gender = x[f + 1].gender;
-                x[f].cabin = x[f + 1].cabin;
+                x[f].room = x[f + 1].room;
                 x[f].phone = x[f + 1].phone;
                 f++;
             }
@@ -490,7 +490,7 @@ void del()
         }
         else if (h == 5)
         {
-            x[f].cabin = 0;
+            x[f].room = 0;
         }
         else if (h == 6)
         {
@@ -571,7 +571,7 @@ int read()
         //in the next execution of this program
         fp = fopen("records.txt", "w");
         fclose(fp);
-        printf("File does not exist, creating now...\n\n\n");
+        printf("File does not exist, creating now...\n\n");
         return 0;
     }
 
