@@ -569,7 +569,7 @@ int read()
         //in the next execution of this program
         fp = fopen("records.txt", "w");
         fclose(fp);
-        printf("File does not exist, I JUST CREATED IT, exiting...\n\n\n");
+        printf("File does not exist, creating now...\n\n\n");
         return 0;
     }
 
