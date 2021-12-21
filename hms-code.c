@@ -535,7 +535,7 @@ void staff()
         printf("Doctor Name    : %s\n", info[i].name);
         printf("Specialization : %s\n", info[i].spec);
         printf("Experience     : %d Years\n", info[i].exp);
-        printf("---------------------------------------------\n")
+        printf("---------------------------------------------\n");
     }
 }
 void expense()
