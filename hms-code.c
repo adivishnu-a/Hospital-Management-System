@@ -61,7 +61,7 @@ int main()
     while (c != 8)
     {
 
-        printf("\n Enter your choice \n\n1. Add Information\n2. View Information\n3. Search\n4. Edit Information\n5. Delete Information\n6. Staff Information\n7. Expense Calculation\n8.Save & Exit\n\nOption : ");
+        printf("Enter your choice \n\n1. Add Information\n2. View Information\n3. Search\n4. Edit Information\n5. Delete Information\n6. Staff Information\n7. Expense Calculation\n8. Save & Exit\n\nOption : ");
         scanf("%d", &c); //choice for option
         fflush(stdin);   //making it clear
         if (c == 1)      //add
@@ -162,9 +162,9 @@ void view()
         puts(x[i].name);
         printf("Disease = ");
         puts(x[i].disease);
+        printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[i].cabin, x[i].phone, x[i].age, x[i].gender);
         printf("Patient Address = ");
         puts(x[i].address);
-        printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[i].cabin, x[i].phone, x[i].age, x[i].gender);
         printf("\n\n");
     }
 }
@@ -257,9 +257,9 @@ void search()
             puts(x[s].name);
             printf("Disease = ");
             puts(x[s].disease);
+            printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[s].cabin, x[s].phone, x[s].age, x[s].gender);
             printf("Address = ");
             puts(x[s].address);
-            printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[s].cabin, x[s].phone, x[s].age, x[s].gender);
             printf("\n\n");
         }
         else
@@ -282,9 +282,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 0;
             }
@@ -309,9 +309,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 0;
             }
@@ -334,9 +334,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 0;
             }
@@ -359,9 +359,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 0;
             }
@@ -384,9 +384,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 1;
             }
@@ -410,9 +410,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 1;
             }
@@ -437,9 +437,9 @@ void search()
                 puts(x[g].name);
                 printf("Disease = ");
                 puts(x[g].disease);
+                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("Address = ");
                 puts(x[g].address);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
                 printf("\n\n");
                 f = 1;
             }
