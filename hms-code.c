@@ -39,7 +39,7 @@ int main()
     system("cls");
     printf("--------------------------------------------\n");
     printf("-------- Hospital Management System --------\n");
-    printf("-----Successfully Entered the main menu-----\n");
+    printf("--------------------------------------------\n");
     printf("\nWelcome to Admin Dashboard\nEnter your Password : ");
     gets(pw);
     int res=strcmp(pw,"admin");
@@ -48,12 +48,13 @@ int main()
         system("cls");
         printf("--------------------------------------------\n");
         printf("-------- Hospital Management System --------\n");
-        printf("-----Successfully Entered the main menu-----\n");
+        printf("--------------------------------------------\n");
         printf("\n Wrong Password, Try again : ");
         gets(pw);
         res=strcmp(pw,"admin");
     }
 
+    //Successful Login
     system("cls");
     printf("--------------------------------------------\n");
     printf("-------- Hospital Management System --------\n");
@@ -115,8 +116,8 @@ int main()
 void add()
 {
     printf("\n\n");
-    printf("Already data inputed on the database =%d\n\n", num); //how many inputs
-    printf("How many entry do you want to add=\n");
+    printf("Already data inputed on the database : %d\n", num); //how many inputs
+    printf("How many entry do you want to add : ");
     scanf("%d", &n);
     sum = n + num;
 
@@ -124,25 +125,25 @@ void add()
     {
         printf("\n");
         fflush(stdin);
-        printf("Enter patient's Name = ");
+        printf("Enter patient's Name : ");
         gets(x[i].name);
         fflush(stdin);
-        printf("Enter disease = ");
+        printf("Enter disease : ");
         gets(x[i].disease);
         fflush(stdin);
-        printf("Enter the age = ");
+        printf("Enter the age : ");
         scanf("%d", &x[i].age);
         fflush(stdin);
-        printf("Enter the gender (M/F/N) = ");
+        printf("Enter the gender (M/F/N) : ");
         scanf("%c", &x[i].gender);
         fflush(stdin);
-        printf("Enter patient's Address = ");
+        printf("Enter patient's Address : ");
         gets(x[i].address);
         fflush(stdin);
-        printf("Enter cabin no = ");
+        printf("Enter cabin no : ");
         scanf("%d", &x[i].cabin);
         fflush(stdin);
-        printf("Enter phone number = ");
+        printf("Enter phone number : ");
         scanf("%d", &x[i].phone);
         fflush(stdin);
         printf("\n");
@@ -157,13 +158,13 @@ void view()
     for (i = 0; i < num; i++)
     {
         printf("\n");
-        printf("Serial Number=%d\n", i);
-        printf("Name = ");
+        printf("Serial Number : %d\n", i);
+        printf("Name : ");
         puts(x[i].name);
-        printf("Disease = ");
+        printf("Disease : ");
         puts(x[i].disease);
-        printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[i].cabin, x[i].phone, x[i].age, x[i].gender);
-        printf("Patient Address = ");
+        printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[i].cabin, x[i].phone, x[i].age, x[i].gender);
+        printf("Patient Address : ");
         puts(x[i].address);
         printf("\n\n");
     }
@@ -177,54 +178,54 @@ void edit()
     printf("1.Name\n2.Disease\n3.Age\n4.Cabin\n5.Phone no.\n6.Gender\n7.Address\n");
     printf("Option=");
     scanf("%d", &q); //option
-    if (q <= 5)
+    if (q <= 7)
     {
-        printf("Enter the serial no of that patient= (0 - %d)=", num - 1);
+        printf("Enter the serial no of that patient (0 - %d) : ", num - 1);
         scanf("%d", &p); //serial number
         if (p < num)
         {
             if (q == 1)
             {
                 fflush(stdin);
-                printf("Enter the new Name=");
+                printf("Enter the new Name : ");
                 gets(x[p].name);
             }
             else if (q == 2)
             {
                 fflush(stdin);
-                printf("Enter the new Disease=");
+                printf("Enter the new Disease : ");
                 gets(x[p].disease);
             }
             else if (q == 3)
             {
                 fflush(stdin);
-                printf("Enter the new Age=");
+                printf("Enter the new Age : ");
                 scanf("%d", &x[p].age);
             }
 
             else if (q == 4)
             {
                 fflush(stdin);
-                printf("Enter the new Cabin no=");
+                printf("Enter the new Cabin no : ");
                 scanf("%d", &x[p].cabin);
             }
 
             else if (q == 5)
             {
                 fflush(stdin);
-                printf("Enter the new Phone no =");
+                printf("Enter the new Phone no : ");
                 scanf("%d", &x[p].phone);
             }
             else if (q == 6)
             {
                 fflush(stdin);
-                printf("Enter the new Gender =");
+                printf("Enter the new Gender : ");
                 scanf("%c", &x[p].gender);
             }
             else if (q == 7)
             {
                 fflush(stdin);
-                printf("Enter the new Address=");
+                printf("Enter the new Address : ");
                 gets(x[p].address);
             }
         }
@@ -243,33 +244,33 @@ void search()
     int s, h, f;
     char u[100];
     printf("By what do you want to search ?\n");
-    printf("1.Serial no.\n2.Name\n3.Disease\n4.Cabin no.\n5.Phone no.\n6.Age\n7.Gender\n8.Address\n\nOption = ");
+    printf("1.Serial no.\n2.Name\n3.Disease\n4.Cabin no.\n5.Phone no.\n6.Age\n7.Gender\n8.Address\n\nOption : ");
     scanf("%d", &h);
     if (h == 1)
     {
-        printf("Enter Serial number of the patient=");
+        printf("Enter Serial number of the patient : ");
         scanf("%d", &s);
         if (s < num)
         {
             printf("\n");
-            printf("Serial Number=%d\n", s);
-            printf("Name = ");
+            printf("Serial Number : %d\n", s);
+            printf("Name : ");
             puts(x[s].name);
-            printf("Disease = ");
+            printf("Disease : ");
             puts(x[s].disease);
-            printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[s].cabin, x[s].phone, x[s].age, x[s].gender);
-            printf("Address = ");
+            printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[s].cabin, x[s].phone, x[s].age, x[s].gender);
+            printf("Address : ");
             puts(x[s].address);
             printf("\n\n");
         }
         else
             printf("\n\nNot Found\n\n");
     }
-    else if (h == 2) //problem is here.........
+    else if (h == 2)
     {
         int f = 1;
         fflush(stdin);
-        printf("Enter your name=");
+        printf("Enter your name : ");
         gets(u);
         fflush(stdin);
         for (g = 0; g < num; g++)
@@ -277,13 +278,13 @@ void search()
             if (strcmp(u, x[g].name) == 0)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 0;
@@ -296,7 +297,7 @@ void search()
     {
         int f = 1;
         fflush(stdin);
-        printf("Enter Disease = ");
+        printf("Enter Disease : ");
         gets(u);
         fflush(stdin);
         for (g = 0; g < num; g++)
@@ -304,13 +305,13 @@ void search()
             if (strcmp(u, x[g].disease) == 0)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 0;
@@ -322,20 +323,20 @@ void search()
     else if (h == 4)
     {
         int f = 1;
-        printf("Enter Cabin number = ");
+        printf("Enter Cabin number : ");
         scanf("%d", &f);
         for (g = 0; g < num; g++)
         {
             if (f == x[g].cabin)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 0;
@@ -347,20 +348,20 @@ void search()
     else if (h == 5)
     {
         int f = 1;
-        printf("Enter Phone number = ");
+        printf("Enter Phone number : ");
         scanf("%d", &f);
         for (g = 0; g < num; g++)
         {
             if (f == x[g].phone)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 0;
@@ -372,20 +373,20 @@ void search()
     else if (h == 6)
     {
         int f = 0;
-        printf("Enter Age = ");
+        printf("Enter Age : ");
         scanf("%d", &f);
         for (g = 0; g < num; g++)
         {
             if (f == x[g].age)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 1;
@@ -398,20 +399,20 @@ void search()
     {
         int f = 0;
         char gen;
-        printf("Enter Gender = ");
+        printf("Enter Gender : ");
         scanf("%c", &gen);
         for (g = 0; g < num; g++)
         {
             if (gen == x[g].gender)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : %d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 1;
@@ -424,7 +425,7 @@ void search()
     {
         int f = 0;
         fflush(stdin);
-        printf("Enter Address = ");
+        printf("Enter Address : ");
         gets(u);
         fflush(stdin);
         for (g = 0; g < num; g++)
@@ -432,13 +433,13 @@ void search()
             if (strcmp(u, x[g].address) == 0)
             {
                 printf("\n");
-                printf("Serial Number=%d\n", g);
-                printf("Name = ");
+                printf("Serial Number : %d\n", g);
+                printf("Name : ");
                 puts(x[g].name);
-                printf("Disease = ");
+                printf("Disease : ");
                 puts(x[g].disease);
-                printf("Cabin no = %d\nPhone number = 0%d\nAge = %d\nGender = %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
-                printf("Address = ");
+                printf("Cabin no : %d\nPhone number : 0%d\nAge : %d\nGender : %c", x[g].cabin, x[g].phone, x[g].age, x[g].gender);
+                printf("Address : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 1;
@@ -453,12 +454,12 @@ void search()
 void del()
 {
     int f, h;
-    printf("Enter the serial number of the patient that you want to delete=");
+    printf("Enter the serial number of the patient that you want to delete : ");
     scanf("%d", &f);
     if (f < num)
     {
         printf("What do you want ?\n");
-        printf("1.Remove the whole record\n2.Remove Name\n3.Remove Disease\n4.Remove age\n5.Remove Cabin\n6.Remove phone number\n7.Remove Gender\n8.Remove Address\nOption = ");
+        printf("1.Remove the whole record\n2.Remove Name\n3.Remove Disease\n4.Remove age\n5.Remove Cabin\n6.Remove phone number\n7.Remove Gender\n8.Remove Address\nOption : ");
         scanf("%d", &h);
         if (h == 1)
         {
@@ -531,9 +532,10 @@ void staff()
 
     for (int i = 0; i < 5; i++)
     {
-        printf("Doctor Name : %s\n", info[i].name);
+        printf("Doctor Name    : %s\n", info[i].name);
         printf("Specialization : %s\n", info[i].spec);
-        printf("Experience : %d Years\n\n", info[i].exp);
+        printf("Experience     : %d Years\n", info[i].exp);
+        printf("---------------------------------------------\n")
     }
 }
 void expense()
