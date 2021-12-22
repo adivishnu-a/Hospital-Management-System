@@ -62,7 +62,7 @@ int main()
     while (c != 8)
     {
 
-        printf("\tEnter your choice \n\n\t1. Add Information\n\t2. View Information\n\t3. Search\n\t4. Edit Information\n\t5. Delete Information\n\t6. Staff Information\n\t7. Expense Calculation\n\t8. Save & Exit\n\n\tOption : ");
+        printf("\n\tEnter your choice \n\n\t1. Add Information\n\t2. View Information\n\t3. Search\n\t4. Edit Information\n\t5. Delete Information\n\t6. Staff Information\n\t7. Expense Calculation\n\t8. Save & Exit\n\n\tOption : ");
         scanf("%d", &c); //choice for option
         fflush(stdin);   //making it clear
         if (c == 1)      //add
