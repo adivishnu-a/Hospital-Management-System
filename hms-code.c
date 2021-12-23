@@ -167,7 +167,7 @@ void view()
         printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[i].room, x[i].age, x[i].gender);
         printf("\n\tPhone No. : ");
         puts(x[i].phone);
-        printf("\n\tPatient Address : ");
+        printf("\tPatient Address : ");
         puts(x[i].address);
         printf("---------------------------------------------------------------------------\n");
     }
