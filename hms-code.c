@@ -104,6 +104,7 @@ int main()
         else if (c == 8)
         {
             write();
+            printf("\n\tEXITED FROM PROGRAM\n");
             return 0;
         }
         else
