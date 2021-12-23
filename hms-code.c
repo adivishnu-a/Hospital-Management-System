@@ -277,7 +277,7 @@ void search()
     {
         int f = 0;
         fflush(stdin);
-        printf("\tEnter your name : ");
+        printf("\tEnter name : ");
         gets(u);
         fflush(stdin);
         for (g = 0; g < num; g++)
