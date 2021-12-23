@@ -117,8 +117,8 @@ int main()
 void add()
 {
     printf("\n\n");
-    printf("\tAlready data inputed on the database : %d\n", num); //how many inputs
-    printf("\tHow many entry do you want to add : ");
+    printf("\tRecords already inputed on the database : %d\n", num); //how many inputs
+    printf("\tHow many entries do you want to add : ");
     scanf("%d", &n);
     sum = n + num;
 
