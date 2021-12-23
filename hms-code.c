@@ -19,6 +19,7 @@ struct staffinfo
 } info[5];
 
 int n, i, j = 0, a = 0, sum = 0, g, flag, num;
+
 int read();
 void add();
 void view();
@@ -112,6 +113,7 @@ int main()
         printf("\n\n");
     }
 }
+
 void add()
 {
     printf("\n\n");
@@ -168,6 +170,7 @@ void view()
         printf("---------------------------------------------------------------------------\n");
     }
 }
+
 void edit()
 {
     int q, p;
@@ -238,6 +241,7 @@ void edit()
         printf("\n\n\tInvalid option\nTry Again!!\n\n");
     }
 }
+
 void search()
 {
     int s, h, f;
@@ -450,6 +454,7 @@ void search()
     else
         printf("\n\n\tInvalid input\n\n");
 }
+
 void del()
 {
     int f, h;
@@ -507,6 +512,7 @@ void del()
     else
         printf("\n\n\tInvalid Serial number\n");
 }
+
 void staff()
 {
     strcpy(info[0].name, "Dr. Naresh Trehan");
@@ -537,6 +543,7 @@ void staff()
         printf("---------------------------------------------------\n");
     }
 }
+
 void expense()
 {
     int days;
@@ -561,6 +568,7 @@ void expense()
     printf("\tFinal Total incl. tax       = %.2f\n", final);
     printf("------------------------------------------------------------\n");
 }
+
 int read()
 {
     FILE *fp = fopen("records.txt", "r");
@@ -577,6 +585,7 @@ int read()
     num = fread(x, sizeof(struct record), 100, fp);
     fclose(fp);
 }
+
 int write()
 {
     FILE *fp = fopen("records.txt", "w");
