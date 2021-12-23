@@ -25,10 +25,9 @@ void view();
 void search();
 void edit();
 void del();
-void show();
-int write();
 void staff();
 void expense();
+int write();
 
 int main()
 {
@@ -37,18 +36,18 @@ int main()
     int m, n;
     char pw[25];
     system("cls");
-    printf("--------------------------------------------------\n");
-    printf("----------- Hospital Management System -----------\n");
-    printf("--------------------------------------------------\n");
+    printf("==================================================\n");
+    printf("----------> Hospital Management System <----------\n");
+    printf("==================================================\n");
     printf("\n\tWelcome to Admin Dashboard\n\tEnter your Password : ");
     gets(pw);
     int res=strcmp(pw,"admin");
     while(res != 0)
     {
         system("cls");
-        printf("--------------------------------------------------\n");
-        printf("----------- Hospital Management System -----------\n");
-        printf("--------------------------------------------------\n");
+        printf("==================================================\n");
+        printf("----------> Hospital Management System <----------\n");
+        printf("==================================================\n");
         printf("\n\tWrong Password, Try again : ");
         gets(pw);
         res=strcmp(pw,"admin");
@@ -56,9 +55,9 @@ int main()
 
     //Successful Login
     system("cls");
-    printf("--------------------------------------------------\n");
-    printf("----------- Hospital Management System -----------\n");
-    printf("--------Successfully Entered the main menu--------\n");
+    printf("==================================================\n");
+    printf("----------> Hospital Management System <----------\n");
+    printf("======[ Successfully Entered the main menu ]======\n");
     while (c != 8)
     {
 
@@ -166,7 +165,7 @@ void view()
         printf("\tRoom no : %d\n\tPhone number : %d\n\tAge : %d\n\tGender : %c", x[i].room, x[i].phone, x[i].age, x[i].gender);
         printf("\n\tPatient Address : ");
         puts(x[i].address);
-        printf("---------------------------------------------------------------------------------------\n");
+        printf("---------------------------------------------------------------------------\n");
     }
 }
 void edit()
