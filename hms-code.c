@@ -555,6 +555,7 @@ void del()
         {
             strcpy(x[f].address, "Cleared");
         }
+        printf("\n\tDeleted");
     }
     else
         printf("\n\n\tInvalid Serial number\n");
