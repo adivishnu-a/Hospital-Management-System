@@ -121,7 +121,7 @@ void add()
     printf("\tHow many entries do you want to add : ");
     scanf("%d", &n);
     sum = n + num;
-
+    //Taking the inputs into the structure
     for (i = num, j = 0; i < sum; i++)
     {
         printf("\n");
@@ -429,6 +429,33 @@ void search()
         int f = 0;
         fflush(stdin);
         printf("\tEnter Address : ");
+        gets(u);
+        fflush(stdin);
+        for (g = 0; g < num; g++)
+        {
+            if (strcmp(u, x[g].address) == 0)
+            {
+                printf("\n");
+                printf("\tSerial Number : %d\n", g);
+                printf("\tName : ");
+                puts(x[g].name);
+                printf("\tDisease : ");
+                puts(x[g].disease);
+                printf("\tRoom no : %d\n\tPhone number : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].phone, x[g].age, x[g].gender);
+                printf("\tAddress : ");
+                puts(x[g].address);
+                printf("\n\n");
+                f = 1;
+            }
+        }
+        if (f == 0)
+            printf("\n\tNot Found\n");
+    }
+    else if (h == 8)
+    {
+        int f = 0;
+        fflush(stdin);
+        printf("\tEnter your address : ");
         gets(u);
         fflush(stdin);
         for (g = 0; g < num; g++)
