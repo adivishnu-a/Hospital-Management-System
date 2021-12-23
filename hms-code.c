@@ -264,7 +264,7 @@ void search()
             printf("\tDisease : ");
             puts(x[s].disease);
             printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[s].room, x[s].age, x[s].gender);
-            printf("\tPhone No. : ");
+            printf("\n\tPhone No. : ");
             puts(x[s].phone);
             printf("\tAddress : ");
             puts(x[s].address);
@@ -291,7 +291,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
@@ -322,7 +322,7 @@ void search()
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
                 printf("\tPhone No. : ");
                 puts(x[g].phone);
-                printf("\tAddress : ");
+                printf("\n\tAddress : ");
                 puts(x[g].address);
                 printf("\n\n");
                 f = 1;
@@ -347,7 +347,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
@@ -375,7 +375,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
@@ -402,7 +402,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
@@ -430,7 +430,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
@@ -459,7 +459,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
@@ -488,7 +488,7 @@ void search()
                 printf("\tDisease : ");
                 puts(x[g].disease);
                 printf("\tRoom no : %d\n\tAge : %d\n\tGender : %c", x[g].room, x[g].age, x[g].gender);
-                printf("\tPhone No. : ");
+                printf("\n\tPhone No. : ");
                 puts(x[g].phone);
                 printf("\tAddress : ");
                 puts(x[g].address);
