@@ -505,7 +505,7 @@ void search()
 void del()
 {
     int f, h;
-    printf("\tEnter the serial number of the patient that you want to delete : ");
+    printf("\tEnter the serial number of the patient that you want to delete : (0 - %d) : ", num - 1);
     scanf("%d", &f);
     if (f < num)
     {
