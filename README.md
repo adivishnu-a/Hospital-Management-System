@@ -1,4 +1,4 @@
-# CSE mini-project 1
+# Hospital Management System
 My work for CSE Mini Project in Sem-1
 
 The main objective of the Hospital Management system is to manage details of 
