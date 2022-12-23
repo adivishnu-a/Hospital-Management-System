@@ -8,6 +8,7 @@ The purpose of the project is to build an application program to reduce manual w
 by simplifying the workflow and eliminating long data entry and data organisation.
 This can greatly enhance the experience of both patients and the hospital 
 administration. 
+
 FEAUTURES: 
 1. Add information 
 2. View information 
