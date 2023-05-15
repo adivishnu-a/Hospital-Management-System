@@ -58,31 +58,7 @@ To use the Hospital Management System, follow these steps:
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or want to enhance the functionality of the hospital management system, feel free to open a pull request by following these steps:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix.
-
-   ```shell
-   git checkout -b feature/your-feature-name
-   ```
-
-3. Make your changes and commit them.
-
-   ```shell
-   git commit -m "Add your commit message here"
-   ```
-
-4. Push your changes to your forked repository.
-
-   ```shell
-   git push origin feature/your-feature-name
-   ```
-
-5. Open a pull request to the main repository.
-
-Once your pull request is reviewed and accepted, it will be merged into the main repository.
+Contributions are welcome! If you find any issues or would like to contribute enhancements, please feel free to submit a pull request.
 
 ## License
 
