@@ -17,3 +17,5 @@ FEAUTURES:
 5. Delete information 
 6. Staff information 
 7. Expense calculation 
+
+Show some love by starring the repo ⭐
